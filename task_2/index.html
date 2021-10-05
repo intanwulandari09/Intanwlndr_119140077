@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Halaman pendaftaran</title>
+
+    <style type="text/css">
+        body{
+            background-image: url("683731.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        label{
+            color:antiquewhite;
+        }
+        form{
+            margin-left: 500px;
+        }
+        input{
+            border-radius: 20px;
+            padding:15px;
+        }
+        textarea{
+            border-radius: 20px;
+            padding: 15px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; color: antiquewhite;">
+        Halaman detail informasi
+    </h1>
+    <form action="detail.html" method="GET">
+        <label for="">Nama</label><br>
+        <input type=" text" name="nama" id="nama" placeholder="masukkan nama lengkap anda"><br>
+
+        <label for="">Nim </label><br>
+        <input type=" text" name="nim" id="nim" placeholder="masukkan nim anda"><br>
+
+        <label for="">Tanggal lahir</label><br>
+    
+        <input type="date" name="date" id="date" required><br>
+
+        <label for="">Alamat</label><br>
+        <textarea name="alamat" id="alamat" cols="30" rows="10" placeholder="masukkan alamat anda"></textarea><br>
+        <label for="">Agama</label><br>
+        <select name="agama" id="agama" style="border-radius: 20px;">
+            <option value="pilih">pilih</option>    
+            <option value="islam">islam</option>    
+            <option value="budha">budha</option>   
+            <option value="kristen">kristen</option>
+            <option value="hindu">hindu</option>         
+        </select><br>
+
+        <label for="">Jenis kelamin</label><br>
+        <input type="radio" name="jeniskelamin" id="jeniskelamin" value="perempuan">
+        <label for="">perempuan</label><br>
+
+        <input type="radio" name="jeniskelamin" id="jeniskelamin" value="laki-laki">
+        <label for="">laki-laki</label><br><br>
+
+        <button type="submit" name="submit">Kirim</button>
+    </form>
+</body>
+</html>
